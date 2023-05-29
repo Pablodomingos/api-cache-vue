@@ -1,5 +1,8 @@
 <template>
-    <h1>Listagem de cursos</h1>
+    <h1>
+        Listagem de cursos
+        <router-link :to="{name: 'course.create'}">+</router-link>
+    </h1>
 
     <div v-if="loading">
         <p>Carregando ...</p>
